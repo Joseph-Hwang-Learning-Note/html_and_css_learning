@@ -1,3 +1,3 @@
 # Kokoa Clone
 
-html,css tutorial!
+HTML & CSS tutorial!
