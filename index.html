@@ -1,43 +1,54 @@
 <!-- index를 첫번째로 찾는다 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="css/styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Kokoa Clone</title>
-</head>
-<body>
-    <div class="status-bar">
-        <div class="status-bar__column">
-            <span>No Service</span>
-            <i class="fas fa-wifi"></i>
+    <head>
+        <link rel="stylesheet" href="css/styles.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Welcome to Kokoa Clone</title>
+    </head>
+    <body>
+        <div class="status-bar">
+            <div class="status-bar__column">
+                <span>No Service</span>
+                <i class="fas fa-wifi"></i>
+            </div>
+            <div class="status-bar__column">
+                <span>18:43</span>
+            </div>
+            <div class="status-bar__column">
+                <span>110%</span>
+                <i class="fas fa-battery-full fa-lg"></i>
+                <i class="fas fa-bolt"></i>
+            </div>
         </div>
-        <div class="status-bar__column">
-            <span>18:43</span>
+
+        <header class="welcome-header">
+            <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+            <p class="welcome-header__text">
+                If you have a Kokoa Account, log in with your email or phone
+                number
+            </p>
+        </header>
+
+        <form id="login-form" action="friends.html" method="GET">
+            <!-- get은 백앤드 필요 x post는 필요 o -->
+            <input
+                name="username"
+                type="text"
+                placeholder="Email or phone number"
+            />
+            <input name="password" type="password" placeholder="Password" />
+            <input type="submit" value="Log In" />
+            <a href="#">Find Kokoa Account or Password</a>
+        </form>
+        <div id="no-mobile">
+            <span>Your screen is not compatible with website.</span>
         </div>
-        <div class="status-bar__column">
-            <span>110%</span>
-            <i class="fas fa-battery-full fa-lg"></i>
-            <i class="fas fa-bolt"></i>
-        </div>
-    </div>
-
-    <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-        <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number</p>
-    </header>
-
-    <form id="login-form" action="friends.html" method="GET">
-        <!-- get은 백앤드 필요 x post는 필요 o -->
-        <input name="username" type="text" placeholder="Email or phone number"/>
-        <input name="password" type="password" placeholder="Password"/>
-        <input type="submit" value="Log In"/>
-        <a href="#">Find Kokoa Account or Password</a>
-    </form>
-
-
-    <script src="https://kit.fontawesome.com/1a086aee57.js" crossorigin="anonymous"></script>
-    <!-- script should always go last -->
-</body>
+        <script
+            src="https://kit.fontawesome.com/1a086aee57.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- script should always go last -->
+    </body>
 </html>

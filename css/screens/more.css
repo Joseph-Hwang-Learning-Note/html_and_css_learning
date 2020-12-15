@@ -1,0 +1,25 @@
+.more-screen .icon-row,
+.more-screen .more-suggestions .more-suggestions__icons {
+    margin-top: 35px;
+}
+
+.more-screen .more-suggestions .more-suggestions__icons {
+    margin-top: 30px;
+}
+
+.more-suggestions {
+    margin-top: 30px;
+    border-top: var(--main-border);
+    padding-top: 30px;
+}
+
+#kokoa_story {
+    color: white;
+    background-color: var(--yellow);
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
